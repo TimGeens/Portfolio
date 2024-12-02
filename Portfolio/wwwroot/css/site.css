@@ -18,5 +18,218 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #332f35;
+    color: #eaeaea;
+}
+
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+/* ================================
+   Navbar Styles
+================================ */
+
+.custom-navbar {
+    background-color: #1f1c23;
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: #eaeaea;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #928a92;
+}
+
+/* ================================
+   Profiel Styles
+================================ */
+
+.profile-section {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 20px;
+    gap: 50px; 
+}
+
+.profile-image img {
+    max-width: 250px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+}
+
+.profile-text {
+    flex: 1; 
+}
+
+.profile-text h2 {
+    margin-bottom: 10px;
+}
+
+.profile-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* ================================
+   Hard Skills Styles
+================================ */
+
+.grid-section {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+    .grid-section h2 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        color: #eaeaea;
+    }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto);
+    gap: 40px;
+}
+
+.card {
+    background: #1f1c23;
+    border: 1px solid #ddd; 
+    border-radius: 10px;
+    max-width: 450px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+    .card:hover {
+        transform: translateY(-5px); 
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+    }
+
+    .card h3 {
+        margin: 0px;
+        font-size: 1.5rem;
+    }
+
+    .card p {
+        font-size: 1rem;
+        color: #928a92;
+    }
+
+.card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eaeaea;
+}
+
+.card-title i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.badge {
+    color: #eaeaea;
+    background-color: #e3474a;
+}
+
+/* ================================
+   Projecten Styles
+================================ */
+
+.projects{
+    margin-top:75px;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eaeaea;
+}
+
+.project-card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolommen */
+    gap: 20px; /* Ruimte tussen kaarten */
+    padding: 20px;
+}
+
+.project-card {
+    background-color: #1f1c23;
+    border-radius: 10px;
+    overflow: hidden; /* Zorg ervoor dat de afbeelding niet uitsteekt */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .project-card:hover {
+        transform: translateY(-5px); /* Kaart beweegt omhoog bij hover */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Versterkte schaduw bij hover */
+    }
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Behoud verhoudingen van de afbeelding */
+}
+
+.project-info {
+    padding: 20px;
+    color: #eaeaea;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #928a92;
+    margin-bottom: 10px;
+}
+
+    .project-meta span {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+.project-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #eaeaea;
+}
+
+.project-role {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #e3474a;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #d3d3d3;
 }

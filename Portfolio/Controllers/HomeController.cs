@@ -18,7 +18,12 @@ namespace Portfolio.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Skills()
+        {
+            return View();
+        }
+
+        public IActionResult Documenten()
         {
             return View();
         }

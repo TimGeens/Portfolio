@@ -2,7 +2,138 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<body>
+    <!--Profiel-->
+    <div class="profile-section">
+        <div class="profile-image">
+            <img src="img/Tim_Geens.png" alt="Foto van Tim">
+        </div>
+        <div class="profile-text">
+            <h2>Wie ben ik?</h2>
+            <p>
+                Hallo! Ik ben Tim Geens, een gemotiveerde junior softwareontwikkelaar met een passie
+                voor technologie en een klantgerichte aanpak. Met ervaring in C#, .NET en Unity, ben ik
+                enthousiast om mijn vaardigheden in te zetten in uitdagende projecten.
+            </p>
+        </div>
+    </div>
+
+    <!--Hard Skills-->
+    <section class="grid-section">
+        <h2>Hard skills</h2>
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-title">
+                    <i class="bi bi-globe"></i>
+                    <h3>Frontend</h3>
+                </div>
+                <div class="skills">
+                    <span class="badge rounded-pill">HTML5</span>
+                    <span class="badge rounded-pill">CSS</span>
+                    <span class="badge rounded-pill">JavaScript</span>
+                    <span class="badge rounded-pill">TypeScript</span>
+                    <span class="badge rounded-pill">React</span>
+                    <span class="badge rounded-pill">Bootstrap</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <i class="bi bi-hdd-stack"></i>
+                    <h3>Backend</h3>
+                </div>
+                <div class="skills">
+                    <span class="badge rounded-pill">C#</span>
+                    <span class="badge rounded-pill">ASP.NET Core/MVC</span>
+                    <span class="badge rounded-pill">.NET MAUI</span>
+                    <span class="badge rounded-pill">REST API's</span>
+                    <span class="badge rounded-pill">Entity Framework</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <i class="bi bi-database"></i>
+                    <h3>Database</h3>
+                </div>
+                <div class="skills">
+                    <span class="badge rounded-pill">SQL</span>
+                    <span class="badge rounded-pill">MS SQL Server</span>
+                    <span class="badge rounded-pill">MariaDB</span>
+                    <span class="badge rounded-pill">Entity Framework</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-title">
+                    <i class="bi bi-gear"></i>
+                    <h3>Tools & Others</h3>
+                </div>
+                <div class="skills">
+                    <span class="badge rounded-pill">GIT</span>
+                    <span class="badge rounded-pill">Docker</span>
+                    <span class="badge rounded-pill">Unity</span>
+                    <span class="badge rounded-pill">Visual Studio/VS Code</span>
+                    <span class="badge rounded-pill">Scrum/Agile</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Projecten-->
+    <section class="projects">
+        <div class="project-title">
+            <h2>Projects</h2>
+        </div>
+        <div class="project-card-grid">
+            <!-- Eerste kaart -->
+            <div class="project-card">
+                <img src="img/Storm_Before_Supper.png" alt="Project afbeelding" class="project-image">
+                <div class="project-info">
+                    <div class="project-meta">
+                        <span><i class="bi bi-people"></i> 2</span>
+                        <span><i class="bi bi-clock"></i> 7 Dagen</span>
+                        <span><i class="bi bi-tools"></i> Unity</span>
+                    </div>
+                    <h3 class="project-title">Storm Before Supper (2024)</h3>
+                    <p class="project-role">Gameplay Programmer</p>
+                    <p class="project-description">
+                        Dit is onze tweede gamejam game.  Gemaakt voor de "Brackeys Game Jam 2024.2", met het thema "Calm before the storm".
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tweede kaart -->
+            <div class="project-card">
+                <img src="img/Startspeler.png" alt="Project afbeelding" class="project-image">
+                <div class="project-info">
+                    <div class="project-meta">
+                        <span><i class="bi bi-people"></i> 3</span>
+                        <span><i class="bi bi-clock"></i> 1 Semester</span>
+                        <span><i class="bi bi-tools"></i> .NET MAUI</span>
+                    </div>
+                    <h3 class="project-title">Project Startspeler (2023)</h3>
+                    <p class="project-role">Backend/API Programmer</p>
+                    <p class="project-description">
+                        Dit is een schoolproject dat we hebben gemaakt voor werkplekleren in het tweede jaar. Het project bestaat uit een mobile app en een desktop app.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Derde kaart -->
+            <div class="project-card">
+                <img src="img/Ascending_Ascension.png" alt="Project afbeelding" class="project-image">
+                <div class="project-info">
+                    <div class="project-meta">
+                        <span><i class="bi bi-people"></i> 2</span>
+                        <span><i class="bi bi-clock"></i> 10 Dagen</span>
+                        <span><i class="bi bi-tools"></i> Unity</span>
+                    </div>
+                    <h3 class="project-title">Ascending Ascension (2022)</h3>
+                    <p class="project-role">Gameplay Programmer</p>
+                    <p class="project-description">
+                        Dit is onze eerste gamejam game.  Gemaakt voor de "The GameDev.tv Game Jam 2022", met het thema "Death is only the Beginning!".
+                    </p>
+                </div>
+            </div>
+        </div>
+        </section>
+</body>
+
