@@ -1,5 +1,6 @@
 html {
   font-size: 14px;
+  scroll-behavior:smooth;
 }
 
 
@@ -39,6 +40,10 @@ body {
 
 .custom-navbar .nav-link:hover {
     color: #928a92;
+}
+
+.nav-item{
+    margin-left: 15px
 }
 
 /* ================================
@@ -299,7 +304,40 @@ body {
             transform: translateY(-2px); /* Kaart beweegt omhoog bij hover */
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Versterkte schaduw bij hover */
         }
-    
+
+/* ================================
+   Back To Top Styles
+================================ */
+
+.back-to-top {
+    position: fixed;
+    bottom: 75px; /* Afstand vanaf de onderkant */
+    right: 30px; /* Afstand vanaf de rechterkant */
+    padding: 10px 20px;
+    background-color: #e3474a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0; /* Maak standaard onzichtbaar */
+    visibility: hidden; /* Zorg dat het niet klikbaar is */
+}
+
+    .back-to-top:hover {
+        background-color: #d33636;
+        color: #928a92;
+        transform: translateY(-2px); /* Beweeg omhoog bij hover */
+    }
+
+    .back-to-top.show {
+        opacity: 1; /* Maak zichtbaar */
+        visibility: visible; /* Zorg dat het klikbaar is */
+    }
+
+
 
 
 @media (max-width: 768px) {
@@ -356,3 +394,5 @@ body {
             width: 100%; /* Knoppen nemen volledige breedte in */
         }
 }
+
+
