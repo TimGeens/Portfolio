@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Tim Geens";
 }
 
 <body>
@@ -99,6 +99,7 @@
         <div class="project-card-grid">
             <!-- Eerste kaart -->
             <div class="project-card">
+                <a asp-controller="Home" asp-action="Project_1" class="project-card-link">
                 <img src="img/Storm_Before_Supper.png" alt="Project afbeelding" class="project-image">
                 <div class="project-info">
                     <div class="project-meta">
@@ -112,11 +113,13 @@
                         Dit is onze tweede gamejam game.  Gemaakt voor de "Brackeys Game Jam 2024.2", met het thema "Calm before the storm".
                     </p>
                 </div>
+                </a>
             </div>
 
             <!-- Tweede kaart -->
             <div class="project-card">
-                <img src="img/Startspeler.png" alt="Project afbeelding" class="project-image">
+                <a asp-controller="Home" asp-action="Project_2" class="project-card-link">
+                    <img src="img/Startspeler.png" alt="Project afbeelding" class="project-image">
                 <div class="project-info">
                     <div class="project-meta">
                         <span><i class="bi bi-people"></i> 3</span>
@@ -129,10 +132,13 @@
                         Dit is een schoolproject dat we hebben gemaakt voor werkplekleren in het tweede jaar. Het project bestaat uit een mobile app en een desktop app.
                     </p>
                 </div>
+                </a>
             </div>
+            
 
             <!-- Derde kaart -->
             <div class="project-card">
+                <a asp-controller="Home" asp-action="Project_3" class="project-card-link"> 
                 <img src="img/Ascending_Ascension.png" alt="Project afbeelding" class="project-image">
                 <div class="project-info">
                     <div class="project-meta">
@@ -146,6 +152,7 @@
                         Dit is onze eerste gamejam game.  Gemaakt voor de "The GameDev.tv Game Jam 2022", met het thema "Death is only the Beginning!".
                     </p>
                 </div>
+                </a>
             </div>
         </div>
         </section>

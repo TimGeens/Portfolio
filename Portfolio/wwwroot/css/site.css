@@ -46,6 +46,9 @@ body {
     margin-left: 15px
 }
 
+
+
+
 /* ================================
    Profiel Styles
 ================================ */
@@ -214,6 +217,7 @@ body {
     overflow: hidden; /* Zorg ervoor dat de afbeelding niet uitsteekt */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtiele schaduw */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
 }
 
     .project-card:hover {
@@ -265,12 +269,56 @@ body {
     color: #d3d3d3;
 }
 
+.project-card-link {
+    text-decoration: none; /* Verwijder onderstreping */
+    color: inherit; /* Zorg dat de tekstkleur overerft van de kaart */
+    display: block; /* Zorg dat de hele link blok is */
+}
+
+/* ================================
+   Projecten Details Styles
+================================ */
+
+.project-detail-startsection {
+    display: flex; /* Plaats de container in een rij */
+    justify-content: space-between; /* Ruimte tussen de elementen */
+    gap: 50px; /* Ruimte tussen de afbeelding en tekst */
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px;
+}
+
+.project-detail-titlediscription{
+    align-content:center;
+}
+
+.project-detail-hoofdtitle {
+    color: #d3d3d3;
+}
+
+.project-detail-title {
+    color: #d3d3d3;
+    margin-top: 30px;
+}
+
+.project-detail-description {
+    color: #d3d3d3;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.project-detail-image {
+    max-width: 400px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+
 /* ================================
    Contact Styles
 ================================ */
-
-.contact{
-
+.contact {
 }
 
 .contact-title {
@@ -312,7 +360,7 @@ body {
 .back-to-top {
     position: fixed;
     bottom: 75px; /* Afstand vanaf de onderkant */
-    right: 30px; /* Afstand vanaf de rechterkant */
+    right: 75px; /* Afstand vanaf de rechterkant */
     padding: 10px 20px;
     background-color: #e3474a;
     color: white;

@@ -18,12 +18,17 @@ namespace Portfolio.Controllers
             return View();
         }
 
-        public IActionResult Skills()
+        public IActionResult Project_1()
         {
             return View();
         }
 
-        public IActionResult Documenten()
+        public IActionResult Project_2()
+        {
+            return View();
+        }
+
+        public IActionResult Project_3()
         {
             return View();
         }
