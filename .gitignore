@@ -10,7 +10,7 @@
 *.userosscache
 *.sln.docstates
 .vs/
-*.db
+*.db*
 *.v2
 *.bin
 
