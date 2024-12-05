@@ -284,8 +284,7 @@ body {
     justify-content: space-between; /* Ruimte tussen de elementen */
     gap: 50px; /* Ruimte tussen de afbeelding en tekst */
     margin: 0 auto;
-    max-width: 1000px;
-    padding: 20px;
+    margin-top: 40px;
 }
 
 .project-detail-titlediscription{
@@ -298,14 +297,15 @@ body {
 
 .project-detail-title {
     color: #d3d3d3;
-    margin-top: 30px;
+    margin-top: 40px;
+    text-align:center;
+    margin-bottom: 20px;
 }
 
 .project-detail-description {
     color: #d3d3d3;
     font-size: 1.1rem;
     line-height: 1.6;
-    margin-top: 20px;
 }
 
 .project-detail-image {
@@ -314,7 +314,43 @@ body {
     object-fit: cover;
 }
 
+.project-keyfeatures-description {
+    font-size: 1.1rem;
+}
 
+.project-keyfeatures-listitem {
+    margin-bottom: 10px;
+}
+
+.project-detail-galerij{
+    margin-top: 40px;
+}
+
+.project-detail-buttons {
+    display: flex; /* Gebruik Flexbox */
+    justify-content: center; /* Centreer de knoppen horizontaal */
+    align-items: center; /* Centreer de knoppen verticaal */
+    gap: 30px; /* Ruimte tussen de knoppen */
+    margin: 0 auto; /* Centreer de container */
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+    .project-detail-buttons i {
+        color: #e3474a;
+        background-color: transparent;
+    }
+
+    .project-detail-buttons a {
+        background-color: #1f1c23;
+        color: #d3d3d3;
+        max-width: 150px;
+    }
+
+        .project-detail-buttons a:hover {
+            color: #928a92;
+            transform: translateY(-2px); /* Kaart beweegt omhoog bij hover */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Versterkte schaduw bij hover */
+        }
 /* ================================
    Contact Styles
 ================================ */
@@ -441,6 +477,21 @@ body {
         .contact-buttons a {
             width: 100%; /* Knoppen nemen volledige breedte in */
         }
+
+    .project-detail-startsection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .project-detail-titlediscription{
+        text-align: center;
+    }
+    .project-detail-description{
+        text-align: left;
+    }
 }
 
 

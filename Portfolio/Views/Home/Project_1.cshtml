@@ -21,21 +21,119 @@
         </div>
     </section>
     
-    <h2 class="project-detail-title">Project Overview</h2>
-    <div class="">
+    <h2 class="project-detail-title">Project Overzicht</h2>
+    <div class="project-detail-description">
+        <p>
+            Voor een gamejam hebben we in zeven dagen een spel van begin tot einde ontwikkeld. Het thema van de gamejam was "Calm before the storm". 
+            Ons doel was een simpele, maar verslavende mini-game met een focus op core features zoals een score- en high score-systeem, en een dynamisch weersysteem.
+            Tijdens de ontwikkeling hebben we een aantal uitdagingen overwonnen. 
+            Zo was de tijdsdruk groot en moesten we kritisch prioriteren. We besloten ons te richten op de gameplayloop en gebruikten Unity om snel een prototype te bouwen. 
+            Een groot probleem dat we tegenkwamen was dat we na één dag van concept zijn veranderd omdat we beiden geen goed gevoel hadden bij dat eerste spelidee. 
+            Dit heeft ons gedwongen om snel een nieuw idee uit te werken en de prioriteiten opnieuw te bepalen. 
+            Daarnaast hebben we met ons weersysteem gezorgd voor extra visuele dynamiek, wat de gameplay levendiger maakte.
+            Door deze ervaring hebben we geleerd effectief samen te werken onder tijdsdruk.  
+            Ons spel werd goed ontvangen omdat het kort, leuk en vrij van bugs was, en natuurlijk vanwege de dansende kabouter waar iedereen wild van was. 
+            We zijn trots op wat we in zo’n korte tijd hebben bereikt.
+            
+        </p>
+    </div>
+    <h2 class="project-detail-title">Belangrijkste Kenmerken</h2>
+    <div class="project-keyfeatures-description">
+        <ul>
+            <li class="project-keyfeatures-listitem">
+                <strong>Weersysteem: </strong>Tijdens de ontwikkeling hebben we een dynamisch weersysteem geïmplementeerd, dat de gameplay levendiger en visueel aantrekkelijker maakt.
+                Het systeem zorgt ervoor dat het spel begint met goed weer, maar tegen het einde begint het heftig te stormen.
+            </li>
+            <li class ="project-keyfeatures-listitem">
+                <strong>Score systeem: </strong>Elk stuk voedsel heeft een score aan zich gelinkt met behulp van scriptable objects,
+                waardoor we met weinig code alle voedsel items konden voorzien van hun eigen score punten.
+            </li>
+            <li><strong>Highscore systeem: </strong>
+                De highscores worden lokaal opgeslagen, zodat spelers hun vijf beste prestaties steeds kunnen terugzien en proberen te verbeteren. 
+                Dit stimuleert competitieve gameplay en maakt het spel verslavend.
+            </li>
+            
+        </ul>
+    </div>
+    <h2 class="project-detail-title">Mijn Rol in het Project</h2>
+    <div class="project-detail-description">
+        <p>
+            Tijdens de ontwikkeling van "Storm Before Supper" heb ik me volledig gericht op de gameplay. 
+            Ik heb alle code geschreven, inclusief de logica voor het weer-, score- en highscore-systeem. 
+            De gebruikersinterface heb ik helemaal zelf toegevoegd aan het spel, zodat alles duidelijk en soepel werkt voor de speler. 
+            Dit omvatte onder andere de scoreweergave, timers en verschillende menu's. 
+            Daarnaast heb ik de sfeer van het spel versterkt door achtergrondmuziek en geluidseffecten toe te voegen, wat ervoor zorgde dat de gameplay echt tot leven kwam.
+        </p>
+    </div>
+    <h2 class="project-detail-title">Gebruikte Technologieën</h2>
+    <div class="project-keyfeatures-description">
+        <ul>
+            <li class="project-keyfeatures-listitem">
+                <strong>Unity: </strong>
+                Gebruikt als game-engine voor het maken van zowel de visuele elementen als de game-logica.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Blender: </strong>
+                Gebruikt voor het maken van 3D-modellen die in het spel werden gebruikt.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Mixamo: </strong>
+                Gebruikt voor het animeren van de gnome.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Git: </strong>
+                Versiebeheer om samen te werken en veranderingen in de code bij te houden.
+            </li>
+        </ul>
+    </div>
+    
+    <div class="project-detail-galerij">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/Screenshots/Storm_Before_Supper/SBS1.png" class="d-block w-100" alt="StartMenu">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Het startmenu met de dansende kabouter.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Screenshots/Storm_Before_Supper/SBS2.png" class="d-block w-100" alt="Spel is net begonnen">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Het spel is net begonnen. Het is nog mooi weer.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Screenshots/Storm_Before_Supper/SBS3.png" class="d-block w-100" alt="Eindscherm">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Het spel is afgelopen. de wereld is donker en het stormt.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
 
+    <h2 class="project-detail-title">Bekijk het Project</h2>
+    <div class="project-detail-buttons">
+        <a class="btn btn-lg" href="https://github.com/Timoca/Brackeys-Game-Jam-2024-2" target="_blank" type="button"><i class="bi bi-github me-2"></i>Github</a>
+        <a class="btn btn-lg" href="https://thimoca.itch.io/storm-before-supper" target="_blank" type="button"><i class="bi bi-joystick me-2"></i>Itch.io</a>
+        
     </div>
-    <h2 class="project-detail-title">Key Features</h2>
-    <div class="">
 
-    </div>
-    <h2 class="project-detail-title">Development Process</h2>
-    <div class="">
-    </div>
-    <h2 class="project-detail-title">Technologies Used</h2>
-    <div class="">
-    </div>
-    <h2 class="project-detail-title">Galerij</h2>
-    <div class="">
-    </div>
+    <button id="backToTop" class="btn back-to-top">
+        ↑ Terug naar boven
+    </button>
+
 </body>
