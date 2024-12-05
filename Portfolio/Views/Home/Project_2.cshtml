@@ -1,5 +1,187 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Project Startspeler";
 }
+
+<body>
+    <!--Foto en korte beschrijving-->
+    <section class="project-detail-startsection">
+        <div class="">
+            <img src="/img/Startspeler.png" alt="Project afbeelding" class="project-detail-image">
+        </div>
+        <div class="project-detail-titlediscription">
+            <h1 class="project-detail-hoofdtitle">Project Startspeler</h1>
+            <div class="project-detail-description">
+                <p>
+                    Project Startspeler had drie belangrijke onderdelen: de API, de desktop kassa-app en de mobiele companion-app. 
+                    Met deze apps kunnen gebruikers makkelijk de evenementen van spellenwinkel Startspeler checken en ook drankjes en snacks bestellen en afrekenen. 
+                    De API zorgt dat alles soepel met elkaar praat, zodat zowel klanten als medewerkers een naadloze ervaring hebben via de desktop en mobiele apps.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--lange omschrijving-->
+    <h2 class="project-detail-title">Project Overzicht</h2>
+    <section class="project-detail-description">
+        <p>
+            Voor Project Startspeler hebben we in een semester een volledig functioneel systeem ontwikkeld dat bestaat uit drie onderdelen: de API, 
+            de desktop kassa-app en de mobiele companion-app. Het doel was om een complete oplossing te maken die niet alleen efficiënt werkt voor medewerkers, 
+            maar ook een prettige ervaring biedt voor de klanten van spellenwinkel Startspeler.
+            De klanten konden bestellen via de app en ze konden ook alle komende events bekijken en er zich op inschrijven.  
+            De personeelsleden van de zaak hadden dan weer de mogelijkheid om op hun desktop-app de bestellingen te zien binnenkomen en de rekeningen af te rekenen.  
+            De personeelsleden hadden ook de mogelijkheid om de voorraad bij te werken en de app hield ook rekening met hoeveel voorraad er nog was van de producten.  
+            Het personeel kan ook evenementen aanmaken en verwijderen.
+            Het project bood de mogelijkheid om zowel de technische backend als de visuele en gebruiksvriendelijke interfaces te ontwikkelen. 
+            Een van de uitdagingen was het opzetten van een schaalbare en veilige API die zorgde voor de naadloze communicatie tussen de verschillende componenten.
+            Tijdens het project kwamen er natuurlijk ook wat uitdagingen op ons pad. Een van de problemen was dat we nog geen lessen over Agile en Scrum hadden gehad, 
+            waardoor we bijna in tijdsgebrek kwamen. Bovendien werkten we voor het eerst in een team van drie, wat een nieuwe dynamiek met zich meebracht.
+            We zijn trots op het eindresultaat: een systeem dat de klantervaring verbetert, het werk voor medewerkers gemakkelijker maakt, en zowel klanten als personeel helpt.
+        </p>
+    </section>
+
+    <!--Kenmerken-->
+    <h2 class="project-detail-title">Belangrijkste Kenmerken</h2>
+    <section class="project-keyfeatures-description">
+        <ul>
+            <li class="project-keyfeatures-listitem">
+                <strong>Account- en Rollenbeheer: </strong>Het accountsysteem houdt bij wie welke rol heeft, bijvoorbeeld klant of medewerker. 
+                Het systeem registreert ook wie welke bestellingen heeft geplaatst en welke betalingen nog openstaan, 
+                zodat iedereen gemakkelijk kan zien wat nog afgehandeld moet worden.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Evenementenbeheer: </strong>Klanten kunnen eenvoudig evenementen van spellenwinkel Startspeler bekijken en zich inschrijven. 
+                Het personeel kan evenementen aanmaken, bewerken, of verwijderen om de agenda up-to-date te houden.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Bestel- en Kassasysteem: </strong>
+                De mobiele app maakt het mogelijk voor klanten om drankjes en snacks te bestellen. Personeelsleden gebruiken de desktopapp om bestellingen te verwerken en af te rekenen. 
+                De koppeling tussen de apps zorgt voor een vlotte ervaring, zowel voor de klant als voor de medewerker.
+            </li>
+            <li>
+                <strong>Voorraadbeheer: </strong>
+                Het systeem biedt real-time voorraadbeheer, waarbij medewerkers de beschikbare voorraad kunnen bijwerken. 
+                Zo kunnen ze steeds een goed overzicht houden van welke producten nog beschikbaar zijn.
+            </li>
+        </ul>
+    </section>
+
+    <!--Mijn rol-->
+    <h2 class="project-detail-title">Mijn Rol in het Project</h2>
+    <section class="project-detail-description">
+        <p>
+            Bij Project Startspeler was mijn rol veelzijdig en richtte ik me op verschillende belangrijke onderdelen. 
+            Ik heb het ERD (Entity Relationship Diagram) gemaakt en de database opgezet met behulp van Entity Framework. 
+            Daarna heb ik het registratie- en accountsysteem ontwikkeld met Identity, inclusief een inlogsysteem met JWT-tokens (ook wel Bearer-tokens genoemd).
+            Daarnaast heb ik de uiteindelijke UI-designs gemaakt in Figma, wat hielp om een duidelijk beeld te schetsen van hoe de applicatie eruit zou moeten zien. 
+            Ook heb ik vaak bijgesprongen om mijn teamleden te helpen wanneer zij even niet verder konden, en heb ik bugs opgelost waar zij niet uitkwamen. 
+            Mijn bijdrage zorgde ervoor dat zowel de technische als visuele aspecten van het project soepel verliepen.
+        </p>
+    </section>
+
+    <!--Gebruikte tech-->
+    <h2 class="project-detail-title">Gebruikte Technologieën</h2>
+    <section class="project-keyfeatures-description">
+        <ul>
+            <li class="project-keyfeatures-listitem">
+                <strong>.NET MAUI: </strong>
+                Ingezet voor het ontwikkelen van zowel de mobiele companion-app als de desktopapp.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>ASP.NET Core: </strong>
+                Gebruikt voor het ontwikkelen van de API en server-side logica.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>MySQL: </strong>
+                Gebruikt als de database voor het opslaan en beheren van gegevens.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Entity Framework: </strong>
+                Gebruikt voor het opzetten en beheren van de database, waardoor datamanagement eenvoudiger werd.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Identity: </strong>
+                Ingezet voor het ontwikkelen van het registratie- en accountsysteem, inclusief authenticatie en autorisatie van gebruikers.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>JWT-tokens: </strong>
+                Gebruikt voor veilige, stateloze authenticatie van gebruikers.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Postman: </strong>
+                Gebruikt voor het testen van de API en het valideren van de verschillende endpoints tijdens de ontwikkeling.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Figma: </strong>
+                Gebruikt voor het maken van de UI-designs, om een duidelijk en consistent beeld te creëren van de applicatie.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Git: </strong>
+                Gebruikt voor versiebeheer, om efficiënt samen te werken en veranderingen in de code bij te houden.
+            </li>
+        </ul>
+    </section>
+
+    <!--Galerij-->
+    <section class="project-detail-galerij">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/Screenshots/Startspeler/SS1.png" class="d-block w-100" alt="Bestellings overzicht">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>De pagina op de desktop kassa-app waar je bestellingen kan bekijken en op betaald zetten.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Screenshots/Startspeler/SS2.png" class="d-block w-100" alt="Evenementen overzicht">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>De pagina op de desktop kassa-app waar je evenementen kan bekijken, toevoegen, aanpassen en verwijderen.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Screenshots/Startspeler/SS3.png" class="d-block w-100" alt="Bestelpagina">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>De pagina op de companion-app waar gebruiker hun bestelling kunnen bekijken en bestellen.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Screenshots/Startspeler/SS4.png" class="d-block w-100" alt="Registratie scherm">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Op deze pagina kunnen gebruikers een account aanmaken via de companion-app.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Screenshots/Startspeler/SS5.png" class="d-block w-100" alt="Inschijving evenementen pagina">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>Hier kunnen de gebruikers zich inschrijven voor evenementen.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!--buttons-->
+    <h2 class="project-detail-title">Bekijk het Project</h2>
+    <section class="project-detail-buttons">
+        <a class="btn btn-lg" href="https://github.com/Timoca/School-Project-StartSpeler-2de-jaar" target="_blank" type="button"><i class="bi bi-github me-2"></i>Github</a>
+    </section>
+
+    <button id="backToTop" class="btn back-to-top">
+        ↑ Terug naar boven
+    </button>
+
+</body>
