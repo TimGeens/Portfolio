@@ -1,0 +1,189 @@
+﻿@{
+    ViewData["Title"] = "Project Ziekenfonds";
+}
+
+
+<body>
+    <!--Foto en korte beschrijving-->
+    <section class="project-detail-startsection">
+        <div class="">
+            <img src="/img/Groepsreizen.png" alt="Logo van het Ziekenfonds project met de naam 'De reizende ziekenkas' er op vermeld" class="project-detail-image">
+        </div>
+        <div class="project-detail-titlediscription">
+            <h1 class="project-detail-hoofdtitle">Project Ziekenfonds</h1>
+            <div class="project-detail-description">
+                <p>
+                    Een webplatform gebouwd in ASP.NET Core waar groepsreizen op geplaatsts kunnen worden, 
+                    <br />
+                    beheerd kunnen worden en waar de gebruikers en monitoren zich op kunnen inschrijven.
+                    <br />
+                    Dit schoolproject is een groepsproject waar we met drie aan hebben gewerkt.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--lange omschrijving-->
+    <h2 class="project-detail-title">Project Overzicht</h2>
+    <section class="project-detail-description">
+        <p>
+            Voor dit schoolproject hebben we binnen één semester een webplatform ontwikkeld waar ouders hun kinderen kunnen inschrijven voor groepsreizen.
+            Hiervoor moeten ze een account aanmaken en hun kinderen aan hun account toevoegen. 
+            Daarna kunnen ze het groepsreizenoverzicht bezoeken en hun kinderen inschrijven voor de reizen naar keuze.
+            Monitoren kunnen ook via hun account zichzelf inschrijven voor reizen naar keuze en daarnaast ook inschrijven voor opleidingen.
+            De verantwoordelijken hebben de mogelijkheid om alles in de applicatie te beheren, waaronder de reizen, opleidingen en gebruikers zelf.
+            Tijdens het project zijn we wel wat moeilijkheden tegengekomen, zoals bijvoorbeeld het gegeven ERD dat verschillende fouten bevatte.
+            Dit zorgde ervoor dat we de database behoorlijk moesten aanpassen.
+            Dit is een ASP.NET Core-project dat verbonden is met een SQL-database, en voor dit project hebben we gebruikgemaakt van de Agile werkmethode.
+            Uiteindelijk zijn we heel tevreden over het project: we zijn erin geslaagd om alles werkend te krijgen binnen de vereiste tijd, 
+            inclusief de extra features die door de projectmanager tussentijds zijn toegevoegd.
+        </p>
+    </section>
+
+    <!--Kenmerken-->
+    <h2 class="project-detail-title">Belangrijkste Kenmerken</h2>
+    <section class="project-keyfeatures-description">
+        <ul>
+            <li class="project-keyfeatures-listitem">
+                <strong>Account- en Gebruikersbeheer: </strong>Gebruikers kunnen accounts aanmaken en beheren met behulp van ASP.NET Identity. 
+                Dit systeem zorgt voor veilige gebruikersauthenticatie en rolgebaseerd toegangsbeheer voor ouders, monitoren en verantwoordelijken.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Groepsreizen Overzicht en Inschrijvingen: </strong>
+                Het platform biedt een overzicht van beschikbare groepsreizen. Gebruikers kunnen hun kinderen of zichzelf eenvoudig inschrijven voor reizen en opleidingen.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Wachtlijsten en Nieuwe Groepen: </strong>
+                Als een groepsreis volgeboekt is, kunnen gebruikers zich op een wachtlijst plaatsen. Verantwoordelijken hebben de mogelijkheid om een nieuwe groep aan te maken voor dezelfde reis, 
+                waarbij de langst wachtende deelnemers automatisch aan de nieuwe groep worden toegevoegd.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Beheerdersfunctionaliteiten: </strong>Verantwoordelijken hebben volledige controle over groepsreizen, opleidingen en gebruikersbeheer, 
+                inclusief het toevoegen, wijzigen en verwijderen van gegevens.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>SQL-database met Entity Framework Migrations: </strong>Het platform maakt gebruik van een SQL-database die is beheerd via Entity Framework Core Migrations. 
+                Dit maakte iteratief databasebeheer en aanpassingen tijdens de ontwikkeling mogelijk.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Agile Werkmethode: </strong>Het project werd ontwikkeld met behulp van de Agile werkmethode, 
+                wat flexibiliteit en efficiëntie bood bij het implementeren van nieuwe features en het oplossen van problemen.
+            </li>
+        </ul>
+    </section>
+
+    <!--Mijn rol-->
+    <h2 class="project-detail-title">Mijn Rol in het Project</h2>
+    <section class="project-detail-description">
+        <p>
+            In dit project heb ik de basis gelegd door de database-modellen op te zetten en de eerste migrations klaar te zetten. 
+            Daarnaast heb ik het registratie- en login-systeem gebouwd, zodat gebruikers veilig een account kunnen aanmaken en inloggen.
+            Ik heb ervoor gezorgd dat beheerders gebruikers en monitoren kunnen beheren en dat gewone gebruikers hun accounts kunnen beheren en hun gezinsleden kunnen toevoegen. 
+            Ook heb ik de wachtlijstfunctie toegevoegd, waarmee gebruikers automatisch in nieuwe groepen worden geplaatst als een reis volgeboekt is. 
+            Om het platform gebruiksvriendelijker te maken, heb ik breadcrumbs op alle pagina's toegevoegd, zodat navigeren lekker soepel gaat.
+        </p>
+    </section>
+
+    <!--Gebruikte tech-->
+    <h2 class="project-detail-title">Gebruikte Technologieën</h2>
+    <section class="project-keyfeatures-description">
+        <ul>
+            <li class="project-keyfeatures-listitem">
+                <strong>ASP.NET Core: </strong>
+                Gebruikt voor het bouwen van de backend en frontend van het webplatform.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Microsoft SQL Server: </strong>
+                Ingezet als database voor het opslaan van alle gegevens, zoals gebruikers, reizen, opleidingen en inschrijvingen.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Docker: </strong>
+                Gebruikt om de applicatie en database in containers te draaien voor een consistente ontwikkelomgeving.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Azure Data Studio: </strong>
+                Gebruikt voor het beheren en bewerken van de SQL-database.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Entity Framework Core Migrations: </strong>
+                Voor het beheren en bijwerken van de database-structuur tijdens de ontwikkeling.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>ASP.NET Identity: </strong>
+                Gebruikt voor veilige authenticatie en autorisatie van gebruikers.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Git: </strong>
+                Voor versiebeheer en samenwerking binnen het team.
+            </li>
+            <li class="project-keyfeatures-listitem">
+                <strong>Visual Studio: </strong>
+                Gebruikt als IDE voor het ontwikkelen en debuggen van de applicatie.
+            </li>
+        </ul>
+    </section>
+
+    <!--Galerij-->
+    <section class="project-detail-galerij">
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button style="background-color:#332f35;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button style="background-color:#332f35;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button style="background-color:#332f35;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button style="background-color:#332f35;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button style="background-color:#332f35;" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/Screenshots/Groepsreizen/Groepsreizen_Dashboard_Gebruiker.jpg" class="d-block w-100" alt="een afbeelding van het dashboard voor een gebruiker, hierop kan hij doorklikken naar alle functionaliteiten van de app.">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p style="display:inline-block; background-color:#332f35;;">Dit is het dashboard van een gebruiker, hier kan de gebruiker zijn account gegevens bewerken of de reizen bekijken.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Screenshots/Groepsreizen/Groepsreizen_Overzicht_Reizen.jpg" class="d-block w-100" alt="een afbeelding van de pagina waar een gebruiker kan kiezen uit de groepsreizen incusief filter functie.">
+                    <div class="carousel-caption d-none d-md-block" >
+                        <p style="display:inline-block; background-color:#332f35;;">Hier kan de gebruiker kiezen tussen de beschikbare reizen.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Screenshots/Groepsreizen/Groepsreizen_Kind_Toevoegen.jpg" class="d-block w-100" alt="In deze afbeelding word er getoond hoe je een kind kan toevoegen aan je account.">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p style="display:inline-block; background-color:#332f35;">Op deze pagina kan de gebruiker kinderen toevoegen.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Screenshots/Groepsreizen/Groepsreizen_Dashboard_Beheerder.jpg" class="d-block w-100" alt="In deze afbeelding word het dashboard van een beheerder getoond">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p style="display:inline-block; background-color:#332f35;">Dit is het dashboard van een beheerder.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/Screenshots/Groepsreizen/Groepsreizen_Beheer.jpg" class="d-block w-100" alt="In deze afbeelding word het groepsreizenoverzicht dat een beheerder te zien krijgt getoond.">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p style="display:inline-block; background-color:#332f35;">Hier kan de beheerder groepsreizen bekijken, aanpassen en anuleren.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" style="background-color:#332f35;;" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" style="background-color:#332f35;;" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!--buttons-->
+    <h2 class="project-detail-title">Bekijk het Project</h2>
+    <section class="project-detail-buttons">
+        <a class="btn btn-lg" href="https://github.com/Timoca/Schoolproject-Ziekenfonds-3de-jaar" target="_blank" type="button"><i class="bi bi-github me-2"></i>Github</a>
+    </section>
+
+    <button id="backToTop" class="btn back-to-top">
+        ↑ Terug naar boven
+    </button>
+
+</body>

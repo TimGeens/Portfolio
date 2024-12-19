@@ -10,4 +10,11 @@
     <Folder Include="wwwroot\img\Screenshots\Storm_Before_Supper\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="Views\Home\Project_5.cshtml">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
