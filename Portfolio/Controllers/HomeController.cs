@@ -33,6 +33,16 @@ namespace Portfolio.Controllers
             return View();
         }
 
+        public IActionResult Project_4()
+        {
+            return View();
+        }
+
+        public IActionResult Project_5()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
